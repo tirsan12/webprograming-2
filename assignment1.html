@@ -5,7 +5,62 @@
   </head>
   <body>
     <script>
-
+      const result = [{
+        Name:'Ram',
+        Score :45
+      }, {
+        Name: 'Shyam',
+        Score: 47
+      },{
+        Name: 'Hari',
+        Score: 38
+      },{
+        Name: 'Sita',
+        Score: 38
+      },{
+        Name: 'Simon',
+        Score: 47
+      },{
+        Name: 'Rin',
+        Score: 74
+      },{
+        Name: 'Bijaya',
+        Score: 64
+      },{
+        Name: 'Tirsan',
+        Score: 52
+      },{
+        Name: 'Suman',
+        Score: 78
+      },{
+        Name: 'Dipesh',
+        Score: 88
+      },{
+        Name: 'Aswin',
+        Score: 88
+      },{
+        Name: 'Srijana',
+        Score: 87
+      },{
+        Name: 'Subash',
+        Score: 65
+      },{
+        Name: 'Abishek',
+        Score: 89
+      },{
+        Name: 'Suraj',
+        Score: 35
+      }
+      ];
+      result.sort(function(a, b){
+        if (b.Score < a.Score)
+        return -1;
+      if(b.Score > a.Score)
+      return 1;
+      if (b.Score = a.Score)
+        return 0;
+      });
+    console.log(result);
     </script>
   </body>
 </html>
